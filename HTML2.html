@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script>
+		  function resizeIframe(obj) {
+		    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+		    obj.style.width = obj.contentWindow.document.documentElement.scrollWidth + 'px';
+		    }
+		</script>
 	</head>
 	<body>
 		<main>
-			<iframe src="https://www.youtube.com/watch?v=TIUUr78MS4I"></iframe>
+			<h3>H3H3 Podcast</h3>
+			<iframe src="https://www.youtube.com/embed/TIUUr78MS4I" width="420" height="315"></iframe>
+			<br>
+			<h3>Testing An Auto Size Gif</h3>
+			<iframe src="https://content.codecademy.com/courses/SemanticHTML/dog-on-beach.gif" frameborder="1" scrolling="no" onload="resizeIframe(this)"> </iframe>
 		</main>
 	</body>
 </html> 
